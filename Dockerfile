@@ -1,5 +1,5 @@
 FROM microsoft/dotnet:latest
-ENV PORT=8080
+ENV PORT=5000
 RUN mkdir app
 WORKDIR app
 COPY . .

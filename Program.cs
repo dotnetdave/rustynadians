@@ -1,6 +1,6 @@
 ﻿using System.IO;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Framework.Configuration;
+using Microsoft.Extensions.Configuration;
 
 namespace helloskylinerapp
 {
@@ -11,7 +11,6 @@ namespace helloskylinerapp
             // read configuration values from command line and environment
             // variables
             var config = new ConfigurationBuilder()
-                .AddCommandLine(args)
                 .AddEnvironmentVariables()
                 .Build();
 

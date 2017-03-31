@@ -1,0 +1,26 @@
+{
+  "name": "rustynadians",
+  "homepage": "https://github.com/dotnetdave/rustynadians",
+  "authors": [
+    "dotnetdave <dotnetdave@dotnetdave.net>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "knockout": "knockout.js#~3.1.0",
+    "bootstrap-sass": "~3.3.7"
+
+  },
+  "devDependencies": {
+     "gulp": "~3.9.1"
+  }
+}

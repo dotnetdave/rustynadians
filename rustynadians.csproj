@@ -26,7 +26,5 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="1.0.2"/>
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="1.0.2"/>
     <PackageReference Include="Microsoft.Framework.Configuration" Version="1.0.0-beta8"/>
-    <PackageReference Include="bootstrap-sass" Version="3.3.5"/>
-    <PackageReference Include="knockoutjs" Version="3.4.2"/>
   </ItemGroup>
 </Project>

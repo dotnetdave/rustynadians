@@ -1,6 +1,9 @@
+using System.IO;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Logging;
 
 namespace helloskylinerapp
@@ -30,7 +33,12 @@ namespace helloskylinerapp
             }
 
             // serve static files from wwwroot/*
-            app.UseStaticFiles();
+             app.UseStaticFiles(new StaticFileOptions()
+                {
+                    FileProvider = new PhysicalFileProvider(
+                        Path.Combine(Directory.GetCurrentDirectory(), @"Assets")),
+                    RequestPath = new PathString("/assets")
+                });
 
             // use MVC framework
             app.UseMvc();

@@ -2,3 +2,7 @@ obj
 bin
 .vscode
 Assets/vendor
+node_modules/
+.yarnclean
+yarn.lock
+Assets/js/app.min.js
